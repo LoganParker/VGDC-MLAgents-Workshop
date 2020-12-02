@@ -28,8 +28,9 @@
     - `` cd /path/to/MLAgentsWorkshop/ ``
 
 **For Windows users:**
-- Install the virtual environment tool
-    `` pip3 install --user virtualenv ``
+- Install the virtual environment tool 
+    - ``pip3 install --user virtualenv``
+
 - Create and activate the virtual environment
     ```
     virtualenv --python=D:\MLAgentsWorkshop\Python\python.exe cuberunnerenvironment
@@ -41,7 +42,7 @@
 
 **For Mac users:**
 - Install the virtual environment tool
-    -`` pip3 install virtualenv ``
+    - ``pip3 install virtualenv``
 
 - Create and activate the virtual environment
     ```
