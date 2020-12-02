@@ -41,7 +41,7 @@
 
 **For Mac users:**
 - Install the virtual environment tool
-    `` pip3 install virtualenv ``
+    -`` pip3 install virtualenv ``
 
 - Create and activate the virtual environment
     ```
