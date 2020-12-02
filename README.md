@@ -1,6 +1,6 @@
 # VGDC Unity MLAgents Workshop
 
-## Step 1: Unity + Python setup
+## Unity + Python setup
 
 ### Ensure a recent version of Unity is installed
 - Download Unity hub or the most recent version of Unity [here](https://unity3d.com/get-unity/download) 
