@@ -1,0 +1,60 @@
+Base path: 'C:/Program Files/Unity/Hub/Editor/2020.1.0f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2020.1.0f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=18301 outsize=2141 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=12109 outsize=1130 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4442 outsize=1688 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1900 outsize=3126 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11985 outsize=1506 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11985 outsize=1469 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=1350 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=1300 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=1373 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=1325 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=763 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=1027 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=699 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=776 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1431 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=2182 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1330 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1860 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1823 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1288 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1469 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1314 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1614 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1693 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=3103 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=79248 outsize=1973 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=79248 outsize=35634 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=79248 outsize=14208 ok=1
+
+Quitting shader compiler process

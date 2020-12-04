@@ -55,10 +55,6 @@ public class CubeScript : MonoBehaviour
         {
             Reset();
         }
-        if(collision.gameObject.CompareTag("Score"))
-        {
-            Debug.Log("Score");
-        }   
     }
     private void OnTriggerEnter(Collider other)
     {

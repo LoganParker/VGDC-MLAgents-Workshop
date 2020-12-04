@@ -1,0 +1,62 @@
+Base path: 'C:/Program Files/Unity/Hub/Editor/2020.1.0f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2020.1.0f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=18301 outsize=3143 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=12109 outsize=1202 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4442 outsize=1754 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4442 outsize=1594 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11985 outsize=1615 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11985 outsize=1624 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11985 outsize=1469 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=1225 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=1363 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=1501 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=1273 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=773 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=781 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=642 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=633 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1684 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1398 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=2001 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1978 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1823 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1551 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1686 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1291 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=2033 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1638 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1690 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=79248 outsize=3088 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=79248 outsize=35145 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=79248 outsize=2791 ok=1
+
+Quitting shader compiler process
