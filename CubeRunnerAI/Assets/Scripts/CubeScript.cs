@@ -1,8 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class CubeScript : MonoBehaviour
+using Unity.MLAgents;
+public class CubeScript : Agent
 {
     [SerializeField] public float horizontalForce = 0.1f;
     [SerializeField] private KeyCode leftKey = KeyCode.LeftArrow;
@@ -10,8 +11,10 @@ public class CubeScript : MonoBehaviour
     private Vector3 startPosition;
     public ObstacleSpawner ObstacleSpawner;
 
+    public event Action OnReset;
+
     // Start is called before the first frame update
-    void Start()
+   public override void Initialize()
     {
         //Set the starting position of the cube to be... well where it started (for resetting cube position)
         startPosition = transform.position;
@@ -20,16 +23,19 @@ public class CubeScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(Input.GetKey(rightKey))
-        {
-            //Move right
-            Move(0);   
-        }
-        if(Input.GetKey(leftKey))
-        {
-            //Move left
-            Move(1);
-        }
+        
+        RequestDecision();
+        
+        // if(Input.GetKey(rightKey))
+        // {
+        //     //Move right
+        //     Move(0);   
+        // }
+        // if(Input.GetKey(leftKey))
+        // {
+        //     //Move left
+        //     Move(1);
+        // }
     }
     /* Move fucntion using transform. For future addition of the MLAgents, 
     movement by transform is better as the Agent can learn quicker than if
@@ -47,21 +53,61 @@ public class CubeScript : MonoBehaviour
     {
         transform.position = startPosition;
         ObstacleSpawner.DestroyObstacles();
+        OnReset?.Invoke();
     }
     private void OnCollisionEnter(Collision collision)
     {
         //check if object we are colliding with is a barrier / wall
         if(collision.gameObject.CompareTag("Obstacle"))
         {
-            Reset();
+            AddReward(increment:-1.0f);
+            EndEpisode();
+            //Reset();
         }
     }
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("Score"))
         {
+            AddReward(increment:1.0f);
             Debug.Log("Score");
         }   
+    }
+    // controls agent movement
+    public override void OnActionReceived(float[] vectorAction)
+    {
+        //move left
+        if(Mathf.FloorToInt(vectorAction[0]) == 1)
+        {
+            Move(1);
+        }
+        //move right
+        if(Mathf.FloorToInt(vectorAction[1]) == 1)
+        {
+            Move(0);
+        }
+    }
+    //
+    public override void Heuristic(float[] actionsOut)
+    {
+        actionsOut[0] = 0;
+        actionsOut[1] = 0;
+
+        if(Input.GetKey(leftKey))
+        {
+            Move(1);
+            actionsOut[0] = 1;
+        }
+        if(Input.GetKey(rightKey))
+        {
+            Move(0);
+            actionsOut[1] = 1;
+        }
+
+    }
+    public override void OnEpisodeBegin()
+    {
+        Reset();
     }
 
 }
